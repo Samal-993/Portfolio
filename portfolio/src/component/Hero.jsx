@@ -1,7 +1,7 @@
 import React from "react";
 import photo from "../assets/photo.png";
 import { Typewriter } from "react-simple-typewriter";
-import Header from "../utils/header";
+import Header from "../utils/Header.jsx";
 
 const Hero = () => {
   return (
