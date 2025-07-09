@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from './component/hero'
+import Hero from './component/Hero.jsx'
 import { Toaster } from 'react-hot-toast';
-import About from './component/About'
-import Skills from './component/Skills'
-import Project from './component/Project'
-import Contact from './component/Contact'
-import Cursor from './utils/Cursor'
-import Footer from './component/Footer'
+import About from './component/About.jsx'
+import Skills from './component/Skills.jsx'
+import Project from './component/Project.jsx'
+import Contact from './component/Contact.jsx'
+import Cursor from './utils/Cursor.jsx'
+import Footer from './component/Footer.jsx'
 
 
 const App = () => {
