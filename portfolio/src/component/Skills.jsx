@@ -1,18 +1,28 @@
 import React from 'react';
-import white from '../assets/white.png'
+import git from '../assets/git.png'
+import html from '../assets/html.png'
+import css from '../assets/css.png'
+import node from '../assets/node.png'
+import js from '../assets/js.png'
+import npm from '../assets/npm.png'
+import tailwind from '../assets/tailwind.png'
+import react from '../assets/react.png'
+import mongo from '../assets/mongo.png'
+
 const Skills = () => {
   const icons = [
-    "https://cdn3d.iconscout.com/3d/free/preview/free-react-3d-icon-7578010.png?f=webp&h=1400",
-    "https://cdn3d.iconscout.com/3d/free/preview/free-nodejs-3d-icon-7578002.png?f=webp&h=1400",
-    "https://cdn3d.iconscout.com/3d/free/preview/free-html-3d-icon-7578018.png?f=webp&h=1400",
-    "https://cdn3d.iconscout.com/3d/free/preview/free-javascript-3d-icon-7577991.png?f=webp&h=1400",
-    "https://cdn3d.iconscout.com/3d/free/preview/free-mongo-db-3d-icon-7577996.png?f=webp&h=1400",
-    "https://cdn3d.iconscout.com/3d/free/preview/free-css-3d-icon-7578024.png?f=webp&h=1400",
-    "https://cdn3d.iconscout.com/3d/free/preview/free-tailwind-css-3d-icon-9325303@1.png?f=webp&h=1400",
-    "https://cdn3d.iconscout.com/3d/free/preview/free-npm-3d-icon-7578025.png?f=webp&h=1400",
-    "https://cdn3d.iconscout.com/3d/free/preview/free-git-3d-icon-7578021.png?f=webp&h=1400",
-    // "https://cdn3d.iconscout.com/3d/free/preview/free-github-3d-logo-2447911.png?f=webp&h=1400",
-    // "https://cdn3d.iconscout.com/3d/free/preview/free-linkedin-3d-logo-2447889.png?f=webp&h=1400",
+   
+      git,
+    html,
+    css,
+    node,
+    js,
+    npm,
+    tailwind,
+    react,
+    mongo
+   
+    
   ];
 
   return (
