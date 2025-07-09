@@ -19,6 +19,7 @@ const SocialLinks = ({textColor = "text-black" }) => {
         return(
           <a
         href={e.url}
+        key={i}
         target="_blank"
         className={`text-3xl ml-2 ${textColor} bg-white p-2  rounded-[20%]`}
       >

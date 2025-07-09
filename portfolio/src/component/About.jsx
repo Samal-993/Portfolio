@@ -1,6 +1,6 @@
 import React from 'react'
 import 'remixicon/fonts/remixicon.css';
-import SocialLinks from '../utiles/link';
+import SocialLinks from '../utils/link';
 
 const About = () => {
   return (

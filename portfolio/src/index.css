@@ -89,7 +89,7 @@ img
   width: 100%;
 }
 .button #resume,
-.button #contact {
+.button #contact_a {
   position: relative;
   padding: 12px 24px; /* consistent padding */
   width: 110px;        /* fixed width */
@@ -131,7 +131,7 @@ img
 
 
 /* CONTACT BUTTON GRADIENT */
-.button #contact::after {
+.button #contact_a::after {
   content: '';
   width: 130%;
   height: 180%;
@@ -145,12 +145,12 @@ img
   z-index: -1;
 }
 
-.button #contact:hover::after {
+.button #contact_a:hover::after {
   transform: translate(-50%, -50%) scale(1);
   top: 50%;
 }
 
-.button #contact:hover {
+.button #contact_a:hover {
   color: black;
 }
 
