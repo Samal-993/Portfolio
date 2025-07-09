@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import girl from "../assets/girl.jpg";
-import Heading from './Heading';
+
 import ProjectHead from "./ProjectHead";
 
 import { useGSAP } from "@gsap/react";
@@ -40,7 +40,7 @@ const Project = () => {
       id='project'
       style={{ fontFamily: "about_font" }}
       className='flex font-[oswald] flex-col items-center w-full h-auto py-14 gap-10 mt-[10%] bg-neutral-900 sm:bg-white'>
-      {/* <Heading value={'project'} giveColor={'white'} /> */}
+    
       <h1 className="about text-[50px] font-bold mb-4">Projects</h1>
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
         {projectList.map((item) => (
