@@ -1,0 +1,331 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+  width:7px;
+  height: 7px;
+  /* background: linear-gradient(50deg, #ffffff, #000000); */
+}
+
+
+::-webkit-scrollbar-thumb{
+  background: #161516;
+  border-radius:10px;
+  
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+ background: linear-gradient(45deg, #00f0ff, #ff0099);
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'logo_font';
+  src: url('./assets/font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'text_font';
+  src: url('./assets/Poppine.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'main_font';
+  src: url('./assets/Brandis.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'name_font';
+  src: url('./assets/name.ttf') format('truetype');
+  font-weight:500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'about_font';
+  src: url('./assets/Oswald-Bold.ttf') format('truetype');
+ 
+}
+html{
+   scroll-behavior: smooth;
+}
+
+
+
+img
+
+#nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#line{
+  position: relative;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+#line::after {
+  content: '';
+  position: absolute;
+  left:1px;
+  bottom:6px;
+  height: 2px;
+  width:0%;
+  background-color: black;
+  transition: width 0.6s ease;
+}
+
+#line:hover::after {
+  width: 100%;
+}
+.button #resume,
+.button #contact {
+  position: relative;
+  padding: 12px 24px; /* consistent padding */
+  width: 110px;        /* fixed width */
+  height: 50px;        /* fixed height */
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;      /* same font size */
+  line-height: 26px;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+/* RESUME BUTTON GRADIENT */
+.button #resume::after {
+  content: '';
+  width: 130%;
+  height: 180%;
+  border-radius: 70%;
+  background: linear-gradient(45deg, #00f0ff, #ff0099);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  transition: all 0.8s ease;
+  z-index: -1;
+}
+
+.button #resume:hover::after {
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.button #resume:hover {
+  color: black;
+}
+
+
+/* CONTACT BUTTON GRADIENT */
+.button #contact::after {
+  content: '';
+  width: 130%;
+  height: 180%;
+  border-radius: 70%;
+  background: linear-gradient(45deg, #bed7d7, #161516);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: all 0.7s ease;
+  z-index: -1;
+}
+
+.button #contact:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  top: 50%;
+}
+
+.button #contact:hover {
+  color: black;
+}
+
+
+.logo_nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  /* REMOVE fixed width/height */
+}
+
+ .logo_skill {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+
+
+
+#descrption{
+   
+    background: url('https://i.pinimg.com/736x/85/d0/7b/85d07b5b318987fb3eeb5e411e795375.jpg'); /* Replace with your image path */
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    object-fit: cover;
+    color: transparent; /* Make text transparent to show background */
+    text-align: center;
+    padding: 20px;
+    background-position:center left;
+    font-family: name_font;
+    background-size:30px;
+    animation: glow 2s ease-in-out infinite alternate;
+
+    text-shadow: 5px 2px 20px rgba(249, 249, 249, 0.4), 
+               -5px -2px 20px rgba(0, 0, 0, 0.3)
+}
+.name {
+    /* font-size: 80px; */
+    font-weight: bold;
+    background: url('https://i.pinimg.com/736x/62/95/23/62952345b9db33caedb2e46606f75fc8.jpg'); /* Replace with your image path */
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    object-fit: cover;
+    color: transparent; /* Make text transparent to show background */
+    text-align: center;
+    padding: 20px;
+    background-position:center left;
+    font-size: 40px;
+    font-weight: 800;
+    background-size:30px;
+    animation: glow 2s ease-in-out infinite alternate;
+
+ /* Outside soft glow */
+  text-shadow: 5px 2px 20px rgba(38, 114, 221, 0.4), 
+               -5px -2px 20px rgba(17, 18, 18, 0.3);
+}
+ #write{
+  font-family:main_font ;
+  width: 630px;
+  text-align: center;
+  margin-left: 400px;
+  font-size:20px ;
+  margin-top: 50px;
+ }
+
+ .about{
+  font-family:about_font ;
+  text-transform: uppercase;
+  font-weight: 600;
+  
+    transform: scaleX(1.4) scaleY(1.3); /* 1.0 is normal, 1.2 is 20% wider */
+  display: inline-block;
+  letter-spacing: 2px;
+
+  background: url('https://i.pinimg.com/736x/62/95/23/62952345b9db33caedb2e46606f75fc8.jpg'); /* Replace with your image path */
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    object-fit: cover;
+    color: transparent; /* Make text transparent to show background */
+    text-align: center;
+    padding: 20px;
+    background-position:center left;
+    background-size:30px;
+    animation: glow 2s ease-in-out infinite alternate;
+
+
+     text-shadow: 5px 2px 12px rgba(222, 93, 181, 0.4), 
+               -5px -2px 12px rgba(0, 183, 255, 0.3);
+ }
+
+
+
+
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos::before,
+.logos::after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 200px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to right, white 0%, transparent 100%);
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to left, white 0%, transparent 100%);
+}
+
+.logo_items {
+  display: inline-flex;
+  gap: 30px;
+  animation: slides 34s linear infinite;
+}
+
+.logos:hover .logo_items  {
+  animation-play-state: paused;
+}
+
+.logo_items img {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+/* img{
+  height: 100px;
+} */
+
+.logo_items img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.scrollSkill {
+  /* @apply my-20; */
+  animation: scroll 10s linear infinite;
+  filter: grayscale(1.1);
+}
+
+.hoverGray:hover {
+  @apply text-neutral-800;
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes scroll {
+  0% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: -60%;
+  }
+}
