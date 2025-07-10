@@ -32,10 +32,10 @@ const Hero = () => {
 
           <h1 
           style={{ fontFamily: "main_font" }}
-          className="text-2xl w-100 sm:w-full md:text-2xl font-bold text-black pt-4">
+          className="text-2xl w-80 ml-5 sm:w-full md:text-2xl font-bold text-black pt-4">
             I'm passionate about a
             <span id="descrption" className="text-blue-400 ">
-              {/* <br /> */}
+              <br />
               <Typewriter
                 words={["Web Developer", "Designer", "Learner"]}
                 loop={true}

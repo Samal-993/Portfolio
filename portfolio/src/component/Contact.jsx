@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-   <div id="contact" className="w-full min-h-[600px] bg-neutral-900 scroll-mt-32  relative">
+   <div id="contact" className="w-full min-h-[600px] bg-neutral-900 sm:scroll-mt-32  relative">
 
       {/* Heading - Left side */}
       <div className="p-4 w-full sm:w-[10%] sm:ml-80 pt-20 sm:pt-80 flex items-center justify-center sm:-rotate-90">

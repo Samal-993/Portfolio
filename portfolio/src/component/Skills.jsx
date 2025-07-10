@@ -26,7 +26,7 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skill" className="sm:w-full   h-[320px]  scroll-mt-24 bg-white flex flex-col items-center py-10">
+    <div id="skill" className="sm:w-full   h-[350px]  scroll-mt-24 bg-white flex flex-col items-center py-10">
    <h1 className="about text-2xl sm:text-4xl font-bold mb-4">tech stack</h1>
 
       <div className="logos w-[350px] sm:w-full">

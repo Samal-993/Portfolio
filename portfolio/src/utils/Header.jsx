@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div
       style={{ fontFamily: "main_font" }}
-      className="flex  md:flex-row   justify-between items-center px-4 py-3 md:px-6 md:py-4 fixed top-0 left-0 sm:w-full  w-104  z-50 bg-white/30 backdrop-blur-md shadow-md"
+      className="flex  md:flex-row   justify-between items-center px-4 py-3 md:px-6 md:py-4 fixed top-0 left-0 sm:w-full  w-full  z-50 bg-white/30 backdrop-blur-md shadow-md"
     >
       {/* Logo */}
       <h1
