@@ -4,11 +4,11 @@ import SocialLinks from '../utils/Link.jsx';
 
 const About = () => {
   return (
-    <div id='about' className='w-full h-screen scroll-mt-24  bg-white'> 
+    <div id='about' className='w-full h-[850px] mb-20 sm:scroll-mt-24  bg-white'> 
    <div 
     style={{ fontFamily: "main_font" }}
    className="px-6 md:px-20 py-10 max-w-4xl mx-auto text-center   text-black">
-  <h1 className="about text-4xl font-bold mb-4">About Me</h1>
+  <h1 className="about text-2xl sm:text-4xl font-bold  sm:mb-4">About Me</h1>
   <p className="text-xl leading-relaxed">
     Hello! I'm <span className=" font-bold">Premananda Samal</span>, a passionate and self-driven web developer with a deep interest in creating visually appealing, responsive, and user-friendly websites.
   </p>

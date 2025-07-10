@@ -23,7 +23,7 @@ const SocialLinks = ({textColor = "text-black" }) => {
         target="_blank"
         className={`text-3xl ml-2 ${textColor} bg-white p-2  rounded-[20%]`}
       >
-       <i className={` text-center ${e.icon}`}></i>
+       <i className={`  sm:text-center ${e.icon}`}></i>
 
       </a>
         )

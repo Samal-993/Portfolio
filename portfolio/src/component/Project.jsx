@@ -41,7 +41,7 @@ const Project = () => {
       style={{ fontFamily: "about_font" }}
       className='flex font-[oswald] flex-col items-center w-full h-auto py-14 gap-10 mt-[10%] bg-neutral-900 sm:bg-white'>
     
-      <h1 className="about text-[50px] font-bold mb-4">Projects</h1>
+      <h1 className="about sm:text-[50px] text-3xl font-bold mb-4">Projects</h1>
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
         {projectList.map((item) => (
           <ProjectHead

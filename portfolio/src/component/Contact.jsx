@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-   <div id="contact" className="w-full min-h-[600px] bg-neutral-900 scroll-mt-32 relative">
+   <div id="contact" className="w-full min-h-[600px] bg-neutral-900 scroll-mt-32  relative">
 
       {/* Heading - Left side */}
       <div className="p-4 w-full sm:w-[10%] sm:ml-80 pt-20 sm:pt-80 flex items-center justify-center sm:-rotate-90">
@@ -53,7 +53,7 @@ const Contact = () => {
 
       {/* Form Box */}
      {/* Form Box */}
-<div className="w-[90%] sm:w-[500px] h-auto sm:h-[500px]  rounded-2xl bg-white mx-auto sm:absolute sm:top-1/2 sm:left-216 sm:-translate-x-1/2 sm:-translate-y-1/2 shadow-md mt-10 sm:mt-[-22px]">
+<div className="w-[85%] sm:w-[500px] h-auto sm:h-[500px]  rounded-2xl bg-white mx-auto sm:absolute sm:top-1/2 sm:left-216 sm:-translate-x-1/2 sm:-translate-y-1/2 shadow-md mt-10 sm:mt-[-22px]">
 
         <div className="p-6 sm:p-10">
           <h3

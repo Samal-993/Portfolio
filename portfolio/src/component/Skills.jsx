@@ -26,14 +26,16 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skill" className="w-full h-[500px] scroll-mt-24 bg-white flex flex-col items-center py-10">
-   <h1 className="about text-4xl font-bold mb-4">tech stack</h1>
+    <div id="skill" className="sm:w-full   h-[320px]  scroll-mt-24 bg-white flex flex-col items-center py-10">
+   <h1 className="about text-2xl sm:text-4xl font-bold mb-4">tech stack</h1>
 
-      <div className="logos">
-        <div className="logo_items">
+      <div className="logos w-[350px] sm:w-full">
+        <div className="logo_items ">
           {icons.concat(icons).map((icon, index) => (
             
-            <img key={index} src={icon} alt="tech" />
+            <img
+            className='w-[60px]  h-[60px] sm:w-[120px] sm:h-[120px]'
+             key={index} src={icon} alt="tech" />
           ))}
          
         </div>

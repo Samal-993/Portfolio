@@ -13,12 +13,12 @@ const Header = () => {
   return (
     <div
       style={{ fontFamily: "main_font" }}
-      className="flex flex-col md:flex-row justify-between items-center px-4 py-3 md:px-6 md:py-4 fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md shadow-md"
+      className="flex  md:flex-row   justify-between items-center px-4 py-3 md:px-6 md:py-4 fixed top-0 left-0 sm:w-full  w-104  z-50 bg-white/30 backdrop-blur-md shadow-md"
     >
       {/* Logo */}
       <h1
         style={{ fontFamily: "logo_font" }}
-        className="text-black text-lg md:text-lg mb-3 md:mb-0"
+        className="text-black text-[13px]  md:text-lg mt-2  md:mb-0"
       >
         @Premananda*
       </h1>
@@ -47,20 +47,41 @@ const Header = () => {
 
       {/* Navigation */}
       <div
-        id="nav"
-        className="text-black font-extrabold text-base md:text-xl flex flex-col md:flex-row gap-3 md:gap-6"
+        className={`${
+          isMenuOpen ? "flex" : "hidden"
+        } md:flex flex-col md:flex-row w-full md:w-auto  items-center gap-3 md:gap-100 mt-3 md:mt-0`}
       >
-        <a id="line" href="#about" >
-          About
-        </a>
-        <a id="line" href="#skill" >
-          Skills
-        </a>
-        <a id="line" href="#project" >
-          Project
-        </a>
-      </div>
-
+        {/* Navigation */}
+        <div
+          id="nav"
+          className="text-black font-extrabold text-base md:text-xl flex flex-col md:flex-row gap-3 md:gap-6"
+        >
+          <a
+            id="line"
+            href="#about"
+            
+            onClick={() => setIsMenuOpen(false)} // Close menu on click
+          >
+            About
+          </a>
+          <a
+            id="line"
+            href="#skill"
+            
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Skills
+          </a>
+          <a
+            id="line"
+            href="#project"
+            
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Project
+          </a>
+        </div>
+       
       {/* Buttons */}
       <div className="button flex flex-col md:flex-row gap-3 md:gap-4 mt-3 md:mt-0">
         <a
@@ -82,6 +103,7 @@ const Header = () => {
             Resume
           </span>
         </a>
+        </div>
       </div>
     </div>
   );
