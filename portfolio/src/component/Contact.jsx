@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:3000/info", formData);
+      const res = await axios.post("https://portfolio-backend-1-o94n.onrender.com", formData);
       console.log("Success", res.data);
       toast.success("Message sent!");
 

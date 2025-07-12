@@ -281,7 +281,7 @@ img
 .logo_items {
   display: inline-flex;
   gap: 30px;
-  animation: slides 34s linear infinite;
+  animation: slides 4s linear infinite;
 }
 
 .logos:hover .logo_items  {
